@@ -11,6 +11,8 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  ## If entrypoint not set the default will be the one specified in Dockerfile ENTRYPOINT instruction
+  pre-entrypoint: 'setup.sh'
   args:
     - ${{ inputs.name }}
     - 'polite'
