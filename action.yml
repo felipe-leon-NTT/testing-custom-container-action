@@ -1,10 +1,10 @@
 name: 'Simple custom container action'
 description: 'Almost nothing'
 inputs:
-  name: 'Name'
-  description: 'Name to print'
-  required: true
-  default: 'Felipe'
+  name:
+    description: 'Name to print'
+    required: true
+    default: 'Felipe'
 outputs:
   msg:
     description: 'Message greeting the person pass in the input'
