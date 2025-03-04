@@ -11,6 +11,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  ## NOTE: Remember to give proper permissions to all scripts used in the action (git update-index --chmod=+x *.sh) 
   ## If entrypoint not set the default will be the one specified in Dockerfile ENTRYPOINT instruction
   pre-entrypoint: 'setup.sh'
   args:
