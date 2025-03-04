@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-if [[ $2 == 'polite' ]]; then
+if [ $2 = 'polite' ]; then
     echo "Hello, Mr. $1"
     echo "Hello, Mr. $1" >> $GITHUB_OUTPUT
 else
